@@ -6,7 +6,6 @@ start (RegName) ->
 
 getm (RegName, [R1, R2, S]) ->
   case S of
-    
     $+ -> 
       gen_server:call (RegName, {getit, 
                                  lists:concat (

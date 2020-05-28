@@ -19,7 +19,7 @@ handle_info ({udp, Socket, HisAddr, HisPort, [A,B,C|_]}, {Socket, MyPort, Serv})
   NewServ = if Serv == mysrv1 -> mysrv2; true -> mysrv1 end ,
   {noreply, {NewSocket, MyPort, NewServ}} .
 
-terminate (_Reason, {Socket,_,_}) -> gen_udp:close (Socket) , ok .
-handle_call (_Req, _From, State) -> {reply, ok, State} .
-handle_cast (_Req, State) -> {noreply, State} .
-code_change (_OldVsn, State, _Extra) -> {ok, State} .
+terminate   (_Reason, {Socket,_,_})    -> gen_udp:close (Socket) , ok .
+handle_call (_Req, _From, State)       -> {reply, ok, State} .
+handle_cast (_Req, State)              -> {noreply, State} .
+code_change (_OldVsn, State, _Extra)   -> {ok, State} .

@@ -24,17 +24,11 @@ handle_call ({getit, [A,B,C|_]}, _From, [ERef10,ERef02]) ->
             end
         end ,
   {reply,  Ans, [ERef10, ERef02]} ;
+
 handle_call (_Req, _From, State) ->
   {reply, smth_wrong, State} .
 
-handle_cast (_Req, State) -> 
-  {noreply, State} .
-
-handle_info (_Info, State) -> 
-  {noreply, State} .
-
-terminate (_Reason, _State) -> 
-  ok .
-
-code_change (_OldVsn, State, _Extra) -> 
-  {ok, State} .
+handle_cast (_Req, State)             ->   {noreply, State} .
+handle_info (_Info, State)            ->   {noreply, State} .
+terminate (_Reason, _State)           ->   ok .
+code_change (_OldVsn, State, _Extra)  ->   {ok, State} .
