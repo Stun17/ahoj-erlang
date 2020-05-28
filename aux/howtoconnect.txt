@@ -1,0 +1,3 @@
+$> socat - udp-connect:localhost:33355
+
+$> nc -u localhost 33355
