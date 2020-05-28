@@ -6,13 +6,10 @@
         { modules,      [ myapp , mysup
                         , myserver, myserver_cb
                         , myfsm, myfsm_cb 
-                        , myevent, handler_02, handler_01
-                        , udpserv, tcpserv
+                        , udpserv
                         ]},
-        { registered,   [mysup, mysrv1, mysrv2, myfsm1, myfsm2, myevnt]},
-        { env,          [ {port0, 33355}
-                        , {port1, 33378}
-                        ]},
+        { registered,   [mysup, mysrv1, mysrv2, myfsm1, myfsm2]},
+        { env,          [ {port0, 33355} ]},
         { mod,          {myapp, []}}
   ] 
 } .

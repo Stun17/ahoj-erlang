@@ -1,2 +1,2 @@
-{'src/*',  [{i,"include"}, {outdir,"ebin"}]}.                                                          
- {'test/*', [{i,"include"}, {outdir,"ebin"}]}. 
+{'src/*',  [{i,"include"}, {outdir,"ebin"}]}.
+{'test/*', [{i,"include"}, {outdir,"ebin"}]}.
