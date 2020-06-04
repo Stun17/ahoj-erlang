@@ -1,1 +1,0 @@
-LD_LIBRARY_PATH=/home/nomad/.local/lib
