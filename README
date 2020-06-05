@@ -2,7 +2,13 @@ WTFPL license
 
 ------------------------------------------------------------------------------
 
-erlang interactive application which tells you abt your pocket strengh
+Erlang interactive application which tells you about your pocket strengh in
+Texas Holdem Poker card game
+
+requirements: 
+
+  - you should have Erlang VM be installed on your system
+  - bash shell (only to start/stop application)
 
 so start:
 
