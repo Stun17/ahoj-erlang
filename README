@@ -7,8 +7,11 @@ Texas Holdem Poker card game
 
 requirements: 
 
-  - you should have Erlang VM be installed on your system
-  - bash shell (only to start/stop application)
+  - Erlang VM - to run application 
+  - bash shell - to start/stop application only
+  - ncat | sockat | _another_soft_  - to connect to udp unix-socket
+
+-------------------------------------------------------------------------------
 
 so start:
 
@@ -30,12 +33,17 @@ to connect to socket:
 
      $> socat - udp-connect:localhost:33355
 
-you ask question in form 
+after that you ask question via terminal in form:
 
-     <rank><rank><s|u>
+     $> <rank><rank><s|u>
 
-and recieve the answer in form
+without any spaces in it. and you recieve the answer in form:
 
      <strenght for full table>  <strenght for Heads-Up>
+
+strengh = 1 is neutral. more than that - "good", less than that - "bad"
+actually this is ROI of this pocket, obtained through Monte-Carlo simulations
+
+-------------------------------------------------------------------------------
 
 enjoy!
