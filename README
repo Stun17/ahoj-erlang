@@ -12,21 +12,24 @@ to stop:
 
    $> ./quick.sh stop
 
+(NB: you should change the first bang-line according with your system bash-path)
+
 to connect to socket:
-a) if you have ncat installed on your system then
 
-   $> nc -u localhost 33355
+   a) if you have ncat installed on your system then
 
-b) if y have socat installed on your system then
+     $> nc -u localhost 33355
 
-   $> socat - udp-connect:localhost:33355
+   b) if y have socat installed on your system then
+
+     $> socat - udp-connect:localhost:33355
 
 you ask question in form 
 
-  <rank><rank><s|u>
+     <rank><rank><s|u>
 
 and recieve the answer in form
 
-   <strenght for full table>  <strenght for Heads-Up>
+     <strenght for full table>  <strenght for Heads-Up>
 
 enjoy!
